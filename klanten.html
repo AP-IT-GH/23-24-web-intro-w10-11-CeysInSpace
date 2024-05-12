@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>recepten</title>
+    <title>klanten</title>
     <!-- reset jouw css -->
     <link href="./css/reset.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
@@ -27,29 +27,16 @@
     ></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="./css/style.css" rel="stylesheet" />
-    <script src="./js/script-recepten.js" defer></script>
+    <script src="./js/script-clients.js" defer></script>
   </head>
-
-  <body class="p-3 m-0 border-0 bd-example">
+</html>
+<body class="p-3 m-0 border-0 bd-example">
     <nav class="navbar navbar-expand-md bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="assets/coffee.png"
-            alt="Koffie & co"
-            width="100"
-            height="100"
-          />
+        <a class="navbar-brand" href="#"><img src="" alt="Koffie & co" width="100" height="100">
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,30 +45,14 @@
               <a class="nav-link" href="index.html">home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="recepten.html"
-                >recepten</a
-              >
+              <a class="nav-link" href="recepten.html">recepten</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >shop</a
-              >
+              <a class="nav-link dropdown-toggle nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">shop</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="shop.html">shop</a></li>
-                <li>
-                  <a class="dropdown-item" href="checkout.html">checkout</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="klanten.html">klanten</a>
-                </li>
+                <li><a class="dropdown-item" href="checkout.html">checkout</a></li>
+                <li><a class="dropdown-item koffiebruin" href="klanten.html">klanten</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -89,66 +60,40 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="zoeken"
-              aria-label="Search"
-            />
-            <button class="btn btn-sm btn-outline-secondary" type="submit">
-              zoeken
-            </button>
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
           </form>
         </div>
       </div>
     </nav>
-
+  
     <header class="row m-5">
-      <h1 class="col display-2 koffiebruin text-center">
-        may the coffee<br />be with you
-      </h1>
+      <h1 class="col display-2 koffiebruin text-center">may the coffee<br>be with you</h1>
     </header>
-
+  
     <div class="container">
       <div class="row">
         <main class="col-md-9 pe-3">
           <section class="row">
             <article class="col-12 mb-3">
-              <h2 class="text-uppercase fs-4 fw-bolder pt-3">recepten</h2>
-              <p>
-                De bruisende wereld van koffierecepten laat creativiteit en
-                smaak samenkomen in elke slok. We delen een passie voor het
-                verkennen van de grenzen van koffie, van klassieke brouwsels tot
-                gedurfde innovaties. Ontdek een schat aan inspiratie terwijl we
-                u begeleiden door een rijke verzameling recepten, elk ontworpen
-                om uw koffie-ervaring te verrijken. Of u nu op zoek bent naar
-                verfrissende ijskoude brouwsels, warme en hartige
-                koffiecocktails of exotische nieuwe smaakcombinaties, wij hebben
-                voor elk wat wils. Laat uw zintuigen verrassen en uw
-                creativiteit ontwaken terwijl u zich onderdompelt in onze wereld
-                van verrukkelijke koffiecreaties.
-              </p>
+              <h2 class="text-uppercase fs-4 fw-bolder pt-3">Klanten</h2>
+              <p>Welkom bij onze "tevreden klanten"-pagina - een ode aan de verrijkende koffiebelevenissen gedeeld door liefhebbers zoals u. We gevloven in het delen van verhalen die de essentie van onze passie voor koffie vastleggen. Van ochtendrituelen die de dag met een glimlach beginnen tot aan bijzondere ontmoetingen rondom een dampende kop koffie, deze pagina is gewijd aan u. Stap in de wereld van gedeelde genoegens en laat u inspireren door de warmte en vreugde die koffie kan brengen.</p>
             </article>
-            <hr />
-
-            <section id="recepten" class="row">
-              <!-- JavaScript laadt recepten in met een API, in een Bootstrap-accordion-->
-            </section>
-
-            <hr class="mb-3 p-3" />
+            <hr>
+  
+          <section id="clients" class="row">
+            <!-- JavaScript laadt de klanten in met een API -->
           </section>
-          <hr />
+          
+          <hr class="mb-3 p-3">
+  
         </main>
-
+  
         <aside class="col-md-3 border-start ps-5">
           <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
-          <p>
-            COFFEE shop<br />
-            e-mail
-            <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a
-            ><br />
-            telefoon +32 123 / 45 67 89
-          </p>
+          <p>COFFEE shop<br>
+            e-mail <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
+            telefoon +32 123 / 45 67 89</p>
           <ul class="list-inline socials">
             <li class="list-inline-item">
               <a href="https://www.youtube.com" target="_blank">
@@ -172,11 +117,11 @@
             </li>
           </ul>
         </aside>
+  
       </div>
     </div>
-
-    <footer class="container-fluid text-center h6 small p-4">
-      &copy; 2024 koffie enzo
-    </footer>
+  
+    <footer class="container-fluid text-center h6 small p-4">&copy; 2024 koffie enzo</footer>
   </body>
-</html>
+  
+  </html>
